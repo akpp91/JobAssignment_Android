@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="parameter_names">
+            <item>FirmID</item>
+            <item>FirmName</item>
+            <item>OwnerName</item>
+    </string-array>
+</resources>
