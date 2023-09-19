@@ -1,4 +1,4 @@
-package com.example.jobassignment_android;
+package com.example.jobassignment_android.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,7 +11,6 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.example.jobassignment_android.DashBoard;
 import com.example.jobassignment_android.R;
 import com.example.jobassignment_android.utils.RetrofitClient;
 import com.google.gson.JsonArray;
@@ -78,7 +77,7 @@ public class Login_Activity extends AppCompatActivity {
                     @Override
                     public void onFailure(Call<JsonArray> call, Throwable t) {
                         Log.e("RetrofitError", "Error: " + t.getMessage());
-                        Toast.makeText(Login_Activity.this, "Something Went Wrong: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Login_Activity.this, " - Something Went Wrong: " + t.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
             }
