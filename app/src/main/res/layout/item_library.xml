@@ -1,38 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:layout_margin="16dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="#FFFFFF">
 
-    <TextView
-        android:id="@+id/textViewId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Id"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:padding="16dp">
 
-    <TextView
-        android:id="@+id/textViewName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Name"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+<TextView
+    android:id="@+id/textViewId"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Id"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:textColor="#333333" />
 
-    <TextView
-        android:id="@+id/textViewRegisterNameENG"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="RegisterNameENG"
-        android:textSize="16sp" />
+<TextView
+    android:id="@+id/textViewName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Name"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:textColor="#333333" />
 
-    <TextView
-        android:id="@+id/textViewCount"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Count"
-        android:textSize="16sp" />
+<TextView
+    android:id="@+id/textViewRegisterNameENG"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="RegisterNameENG"
+    android:textSize="16sp"
+    android:textColor="#666666" />
+
+<TextView
+    android:id="@+id/textViewCount"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Count"
+    android:textSize="16sp"
+    android:textColor="#666666" />
 
 </LinearLayout>
+    </androidx.cardview.widget.CardView>

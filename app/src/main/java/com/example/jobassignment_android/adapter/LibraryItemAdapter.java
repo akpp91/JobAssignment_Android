@@ -31,10 +31,10 @@ public class LibraryItemAdapter extends RecyclerView.Adapter<LibraryItemAdapter.
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         LibraryItem libraryItem = libraryItemList.get(position);
-        holder.idTextView.setText(String.valueOf(libraryItem.getId()));
-        holder.nameTextView.setText(libraryItem.getName());
-        holder.registerNameEngTextView.setText(libraryItem.getRegisterNameEng());
-        holder.countTextView.setText(String.valueOf(libraryItem.getCount()));
+        holder.idTextView.setText("ID: " + String.valueOf(libraryItem.getId()));
+        holder.nameTextView.setText("Name: " + libraryItem.getName());
+        holder.registerNameEngTextView.setText("RegisterNameENG: " + libraryItem.getRegisterNameEng());
+        holder.countTextView.setText("Count: " + String.valueOf(libraryItem.getCount()));
     }
 
     @Override
