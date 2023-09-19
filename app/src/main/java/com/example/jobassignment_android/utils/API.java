@@ -14,5 +14,6 @@ public interface API {
     @GET("/json?key=m00&DB=elibrary_84&Email=technotime.cs@gmail.com")
     Call<JsonArray> getUserDetail();
 
-
+    @GET("/json?key=m61&DB=elibrary_84&p=1")
+    Call<JsonArray> getData();
 }
